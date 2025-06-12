@@ -46,7 +46,7 @@ class StrollerTableScraper:
             stroller_data = {}
             
             # Get product name
-            product_name = row.find('h4', class_='product__info-display')
+            product_name = row.find('a', class_='product__info-display')
             if product_name:
                 stroller_data['Product Name'] = product_name.get_text().strip()
             
