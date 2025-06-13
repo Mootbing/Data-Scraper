@@ -89,7 +89,8 @@ class StrollerTableScraper:
         self.driver.quit()
 
 def main():
-    url = "https://www.consumerreports.org/babies-kids/strollers/traditional-stroller/c28734"
+    # url = "https://www.consumerreports.org/babies-kids/strollers/traditional-stroller/c28734"
+    url = "https://www.consumerreports.org/babies-kids/car-seats/harnessed-car-seat/c34825/"
     scraper = StrollerTableScraper()
     strollers = scraper.scrape_table(url)
     scraper.close()
